@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Hello world</title>
-  </head>
   <style>
     @font-face {
       font-family: capsuula;
@@ -27,11 +26,21 @@
       padding: 1em;
     }
   </style>
+  <script type="text/javascript">
+    function fire_redirect() {
+      window.location.replace("http://pacebl.github.io/");
+    }
+    window.onload = function() {
+      setTimeout("fire_redirect()", 3000);
+    }
+  </script>
+  </head>
   <body>
     <div id="content">
       <h1>I've Moved</h1>
-      <p>My blog, STDOUT, has moved.
-      Please click <a href="http://pacebl.github.io">here</a> to proceed.
+      <p>My blog, STDOUT, has moved. You should be redirected automatically. If
+      you haven't been redirected, please click 
+      <a href="http://pacebl.github.io">here</a> to proceed.
     </div>
   </body>
 </html>
